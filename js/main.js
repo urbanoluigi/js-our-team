@@ -7,33 +7,33 @@ let dipendenti = [
     {
         name_surname: "Wayne Barnett",
         role: "Founder & CEO",
-        image: "",
+        image: "./img/wayne-barnett-founder-ceo.jpg"
     },
     {
         name_surname: "Angela Caroll",
         role: "Chief Editor",
-        image: "",
+        image: "./img/angela-caroll-chief-editor.jpg"
     },
     {
         name_surname: "Walter Gordon",
         role: "Office Manager",
-        image: "",
+        image: "./img/walter-gordon-office-manager.jpg"
     },
     {
         name_surname: "Angela Lopez",
         role: "Social Media Manager",
-        image: "",
+        image: "./img/angela-lopez-social-media-manager.jpg"
     },
     {
         name_surname: "Scott Estrada",
         role: "Developer",
-        image: "",
+        image: "./img/scott-estrada-developer.jpg"
     },
     {
         name_surname: "Barbara Ramos",
         role: "Graphic",
-        image: "",
-    },
+        image: "./img/barbara-ramos-graphic-designer.jpg"
+    }
 ];
 
 /*MILESTONE 1:
@@ -44,4 +44,25 @@ console.log(dipendenti);
 /*MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe*/
 
+for (let i = 0; i < dipendenti.length; i++) {
+    console.log(dipendenti[i].name_surname);
+    console.log(dipendenti[i].role);
+    console.log(dipendenti[i].image);
+    console.log("");
+}
 
+/*BONUS 1:
+Trasformare la stringa foto in una immagine effettiva*/
+
+for (let i = 0; i < dipendenti.length; i++) {
+
+document.getElementById("card").innerHTML +=`
+<div class="card col-4">
+        <img src="${dipendenti[i].image}"  alt="">
+        <div class="card-body">
+          <h5 class="card-title">${dipendenti[i].name_surname}</h5>
+          <p class="card-text">${dipendenti[i].role}</p>
+        </div>
+      </div>
+      `
+}
