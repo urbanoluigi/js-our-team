@@ -7,31 +7,41 @@ let dipendenti = [
     {
         name_surname: "Wayne Barnett",
         role: "Founder & CEO",
-        image: wayne-barnett-founder-ceo.jpg,
+        image: "",
     },
     {
         name_surname: "Angela Caroll",
         role: "Chief Editor",
-        image: angela-caroll-chief-editor.jpg,
+        image: "",
     },
     {
         name_surname: "Walter Gordon",
         role: "Office Manager",
-        image: walter-gordon-office-manager.jpg,
+        image: "",
     },
     {
         name_surname: "Angela Lopez",
         role: "Social Media Manager",
-        image: angela-lopez-social-media-manager.jpg,
+        image: "",
     },
     {
         name_surname: "Scott Estrada",
         role: "Developer",
-        image: scott-estrada-developer.jpg,
+        image: "",
     },
     {
         name_surname: "Barbara Ramos",
         role: "Graphic",
-        image: barbara-ramos-graphic-designer.jpg,
+        image: "",
     },
 ];
+
+/*MILESTONE 1:
+Stampare su console le informazioni di nome, ruolo e la stringa della foto*/
+
+console.log(dipendenti);
+
+/*MILESTONE 2:
+Stampare le stesse informazioni su DOM sottoforma di stringhe*/
+
+
