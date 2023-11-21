@@ -57,7 +57,7 @@ Trasformare la stringa foto in una immagine effettiva*/
 for (let i = 0; i < dipendenti.length; i++) {
 
 document.getElementById("card").innerHTML +=`
-<div class="card col-4">
+<div class="card col-3 m-1 text-center">
         <img src="${dipendenti[i].image}"  alt="">
         <div class="card-body">
           <h5 class="card-title">${dipendenti[i].name_surname}</h5>
